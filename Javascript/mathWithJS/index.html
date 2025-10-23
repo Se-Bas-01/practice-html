@@ -7,23 +7,42 @@
 </head>
 <body>
     <script>
-        // *** this section is simple variables and console logging ***
+        // *** this section is simple variables and console logging *** \\
 
+        //new let variable named "a" with a value of 10.
         let a = 10;
 
-        console.log(23 + 97);
+        //logging variable "a". (outputs: 10)
         console.log(a);
-
+        
+        //reasigning variable "a" to 20.
         a = 20;
-
+        
+        //logging variable "a". (outputs: 20)
         console.log(a);
-
+        
+        //logging 23 + 97. (outputs: 120)
+        console.log(23 + 97);
+        
+        //new let variable named "b" with a value of (7 * a(20)).
         let b = 7 * a;
 
+        //logging variable "b". (outputs: 140)
         console.log(b);
-        // *** this is the end of this section ***]
+        // *** this is the end of this section *** \\
 
-        // *** this section is
+        // *** this section is consts *** \\
+
+        //new const variable named "max" with a value of 57.
+        const max = 57;
+        //new const variable named "actual" with a value of (max(57) - 13).
+        const actual = max - 13;
+        //new const variable named "persentage" with a value of (actual(44) / max(57)).
+        const percentage = actual / max;
+
+        //logging variable "persentage". (outputs: 0.7719298245614035...)
+        console.log(percentage)
+        // *** this is the end of this section *** \\
     </script>
 </body>
 </html>
