@@ -37,3 +37,56 @@ const one = "Haribol, ";
 const two = "how are you?";
 const joined = `${one}${two}`;
 console.log(joined);// "Haribol, how are you?"
+
+// *** Section ends here *** \\
+console.log("")
+console.error("Using length to find how many characters are in the string")
+
+let text01 = "ABCDEFGHIJELMNOPQRSTUVWXYZ";
+let length01 = text01.length;
+console.log(length01);
+
+console.error("Using CharAt()");
+
+let text02 = "HaribolKrishna";
+let char01 = text02.charAt(0);
+console.log(char01);
+
+console.log("")
+console.error("Using CharCodeAt()");
+
+let charCode01 = text02.charCodeAt(0);
+console.log(charCode01);
+
+console.log("")
+console.error("Using CodePointAt()");
+
+let codePoint01 = text02.codePointAt(0);
+console.log(codePoint01);
+
+console.log("")
+console.error("Using At()")
+
+let letter = text02.at(2);
+console.log(letter);
+
+console.log("")
+console.error("Using Property Access");
+
+let char02 = text02[0];
+console.log(char02);
+
+console.log("")
+console.error("Using concat()");
+
+let text03 = "Haribol";
+let text04 = "Krishna";
+let text05 = text03.concat(", ", text04);
+console.log(text05);
+
+console.log("")
+console.error("Using slice()");
+
+let text06 = ("Apple, Banana, Kiwi");
+let part = text06.slice(7, 13);
+console.log(part);
