@@ -39,6 +39,8 @@ const joined = `${one}${two}`;
 console.log(joined);// "Haribol, how are you?"
 
 // *** Section ends here *** \\
+
+// *** This section is getting Parts, Lenghts, Codes, and Letters *** \\
 console.log("")
 console.error("Using length to find how many characters are in the string")
 
@@ -90,3 +92,41 @@ console.error("Using slice()");
 let text06 = ("Apple, Banana, Kiwi");
 let part = text06.slice(7, 13);
 console.log(part);
+
+console.log("")
+console.error("Using substring()");
+
+let part2 = text06.substring(-5, 5);
+console.log(part2);
+
+console.log("")
+console.error("using toUpperCase() and toLowerCase()");
+
+let toCaps = text03.toUpperCase();
+console.log(toCaps);
+
+let toLower = text04.toLocaleLowerCase();
+console.log(toLower);
+
+console.log("")
+console.error("Using isWellFormed");
+
+let isWell = text03.isWellFormed();
+console.log(isWell);
+
+console.log("");
+console.error("Using toWellFormed()");
+
+let text = "Hello World \uD800";
+let toWell = text.toWellFormed();
+console.log(toWell);
+
+console.log("");
+console.error("Using trim() and trimStart()");
+
+let forTrim = "          Haribol, Krishna          ";
+let toTrim = forTrim.trim();
+console.log(toTrim);
+
+let toTrimStart = forTrim.trimStart();
+console.log(toTrimStart);
